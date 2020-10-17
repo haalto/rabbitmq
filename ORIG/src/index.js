@@ -7,7 +7,7 @@ function sleep(ms) {
 }
 
 async function init() {
-  await sleep(3000);
+  await sleep(10000);
 
   amqp.connect('amqp://rabbitmq:5672', (err, connection) => {
     if (err) throw err;

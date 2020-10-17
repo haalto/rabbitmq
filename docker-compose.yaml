@@ -11,12 +11,14 @@ services:
       context: ./ORIG
       dockerfile: Dockerfile
     expose: [8001]
+    restart: always
     command: npm start
   imed:
     build:
       context: ./IMED
       dockerfile: Dockerfile
     expose: [8002]
+    restart: always
     command: npm start
   obser:
     build:
@@ -25,6 +27,7 @@ services:
     volumes:
       - ./data
     expose: [8003]
+    restart: always
     command: npm start
   httpserv:
     build:
@@ -34,4 +37,5 @@ services:
       - obser
     ports:
       - 8080:8080
+    restart: always
     command: npm start

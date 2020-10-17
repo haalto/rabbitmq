@@ -1,5 +1,4 @@
 import amqp from 'amqplib/callback_api.js'
-import { RSA_NO_PADDING } from 'constants';
 import fs from 'fs';
 const FILENAME = '../../../data/data.txt'
 
