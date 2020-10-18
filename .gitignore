@@ -1,5 +1,4 @@
 node_modules/
 rabbitmq
 .vscode
-appdata
-debug.log
+.debug.log
