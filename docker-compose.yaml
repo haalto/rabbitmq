@@ -1,11 +1,10 @@
-version: "3"
+version: '3.6'
 
 services:
   rabbitmq:
     image: rabbitmq:3
     hostname: my-rabbit
-    ports:
-      - 5672:5672
+    expose: [5672]
   orig:
     build:
       context: ./ORIG

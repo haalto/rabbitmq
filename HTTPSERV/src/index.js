@@ -17,5 +17,5 @@ http
     }
   })
   .listen(PORT, () => {
-    console.log(`Service 1 running on PORT: ${PORT}`);
+    console.log(`Server running on PORT: ${PORT}`);
   });
